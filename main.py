@@ -55,9 +55,9 @@ def get_account(account_id: int):
             return account
     return {"message": "Account not found"}
 
-
 @app.delete("/accounts/{account_id}")
 def delete_account(account_id: int):
-    accounts[:] = [account for account in accounts if account.id != account_id]
     delete_account_from_file(account_id)
+    global accounts
+    accounts = read_accounts_from_file()
     return {"message": "Account deleted successfully"}
