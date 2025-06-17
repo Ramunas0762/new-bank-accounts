@@ -1,0 +1,4 @@
+0, business, Ramunas, Pavasario g. 2
+1, personal, Meja, Dzuku g. 13
+0, business, Ramunas, Pavasario g. 2
+0, business, Ramunas, Pavasario g. 2
